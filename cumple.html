@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Feliz Cumpleaños</title>
+  <style>
+    body {
+      background-color: #f8f9fa;
+      font-family: 'Arial', sans-serif;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      margin: 0;
+      flex-direction: column;
+      overflow: hidden;
+      position: relative;
+    }
+
+    h1 {
+      font-size: 4em;
+      color: #ff6f61;
+      text-align: center;
+      animation: fadeIn 3s ease-out;
+      margin: 0;
+    }
+
+    .letrero {
+      font-size: 2em;
+      color: #4CAF50;
+      text-align: center;
+      animation: slideUp 3s ease-in-out;
+      margin-top: 20px;
+      font-weight: bold;
+    }
+
+    .balloon {
+      position: absolute;
+      bottom: -50px;
+      animation: floatUp 8s infinite;
+      transition: transform 0.3s ease-in-out;
+    }
+
+    .balloon:hover {
+      transform: scale(1.2);
+    }
+
+    .balloon:nth-child(1) {
+      left: 20%;
+    }
+
+    .balloon:nth-child(2) {
+      left: 40%;
+    }
+
+    .balloon:nth-child(3) {
+      left: 60%;
+    }
+
+    .balloon:nth-child(4) {
+      left: 80%;
+    }
+
+    .mensaje {
+      position: absolute;
+      bottom: 20px;
+      right: 20px;
+      font-size: 1.2em;
+      color: #555;
+      font-style: italic;
+      animation: fadeIn 5s ease-in-out;
+    }
+
+    @keyframes fadeIn {
+      0% {
+        opacity: 0;
+      }
+      100% {
+        opacity: 1;
+      }
+    }
+
+    @keyframes slideUp {
+      0% {
+        transform: translateY(100px);
+        opacity: 0;
+      }
+      100% {
+        transform: translateY(0);
+        opacity: 1;
+      }
+    }
+
+    @keyframes floatUp {
+      0% {
+        transform: translateY(0);
+      }
+      50% {
+        transform: translateY(-20px);
+      }
+      100% {
+        transform: translateY(0);
+      }
+    }
+  </style>
+</head>
+<body>
+  <h1>¡Feliz Cumpleaños!</h1>
+  <div class="letrero">Para la mejor hermana del mundo</div>
+
+  <div class="balloon">
+    <img src="https://cdn-icons-png.flaticon.com/512/3285/3285143.png" alt="Globo" width="50">
+  </div>
+  <div class="balloon">
+    <img src="https://cdn-icons-png.flaticon.com/512/3285/3285143.png" alt="Globo" width="50">
+  </div>
+  <div class="balloon">
+    <img src="https://cdn-icons-png.flaticon.com/512/3285/3285143.png" alt="Globo" width="50">
+  </div>
+  <div class="balloon">
+    <img src="https://cdn-icons-png.flaticon.com/512/3285/3285143.png" alt="Globo" width="50">
+  </div>
+
+  <div class="mensaje">No sé programar mucho, pero va con amor XD</div>
+
+</body>
+</html>
